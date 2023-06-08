@@ -9,4 +9,3 @@ if __name__ == '__main__':
         for i in range(1, n):
             total += int(av[i])
     print(total)
-
