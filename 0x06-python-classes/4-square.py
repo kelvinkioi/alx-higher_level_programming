@@ -19,11 +19,12 @@ class Square:
         """Class method that returns
         the area of the sqaure"""
         return self.__size * self.__size
-    
+
     @property
     def size(self):
         """Retrives the private instance of size"""
         return self.__size
+
     @size.setter
     def size(self, value):
         """A property setter"""
