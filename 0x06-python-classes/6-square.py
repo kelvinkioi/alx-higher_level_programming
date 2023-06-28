@@ -41,12 +41,15 @@ class Square:
         """ prints in stdout the square with the character #"""
         if self.__size == 0:
             print()
-        else:
-            if self.__position[1] > 0:
-                print("\n" * self.__position[1], end="")
+            return
+        for i in range(self.__position[1]):
+            print()
+        for i in range(self.__size):
+            for i in range(self.__position[0]):
+                print(end=' ')
             for i in range(self.__size):
-                print(" " * self.__position[0], end="")
-                print("#" * self.__size)
+                print('#', end='')
+            print()
 
     @property
     def position(self):
