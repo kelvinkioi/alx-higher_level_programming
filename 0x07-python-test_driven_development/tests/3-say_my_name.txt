@@ -9,7 +9,7 @@ using: ``say my name``
     >>> s_m_n(1234)
     Traceback (most recent call last):
     TypeError: first_name must be a string
-    >>> s_m_n(kelvin', 123)
+    >>> s_m_n('kelvin', 123)
     Traceback (most recent call last):
     TypeError: last_name must be a string
     >>> s_m_n()
