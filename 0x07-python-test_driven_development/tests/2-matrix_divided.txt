@@ -1,0 +1,25 @@
+``2-matrix_divided.py`` module
+============================
+
+Using: ``matrix_divided``
+-------------------
+>>> m_d = __import__('2-matrix_divided').matrix_divided
+
+
+    >>> m_d([[6],[2],[4]], 1000e1000)
+    [[0.0], [0.0], [0.0]]
+    >>> m_d([[6], [2], [4, 111]], 2)
+    Traceback (most recent call last):
+    TypeError: Each row of the matrix must have the same size
+    >>> m_d()
+    Traceback (most recent call last):
+    TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+    >>> m_d([[1],[2]], 0)
+    Traceback (most recent call last):
+    ZeroDivisionError: division by zero
+    >>> m_d([[123],[2]], 'h')
+    Traceback (most recent call last):
+    TypeError: div must be a number
+    >>> m_d([[3, '9'], [15, 3]], 1)
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
