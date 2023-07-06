@@ -1,0 +1,19 @@
+>>> t_i = __import__('5-text_indentation').text_indentation
+
+    >>> t_i(1234)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+    >>> t_i('hi?kelvin.as')
+    hi?
+    <BLANKLINE>
+    kelvin.
+    <BLANKLINE>
+    as
+    >>> t_i('kelvin\n\n123')
+    kelvin
+    <BLANKLINE>
+    <BLANKLINE>
+    <BLANKLINE>
+    <BLANKLINE>
+    <BLANKLINE>
+    123
