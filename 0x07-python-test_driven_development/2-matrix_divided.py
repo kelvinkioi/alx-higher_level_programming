@@ -9,10 +9,10 @@ def matrix_divided(matrix, div):
         raise TypeError('div must be a number')
     if div == 0:
         raise ZeroDivisionError('division by zero')
-    l = len(matrix[0])
+    le = len(matrix[0])
     n = []
     for i in range(len(matrix)):
-        if l != len(matrix[i]):
+        if le != len(matrix[i]):
             raise TypeError('Each row of the matrix must have the same size')
         n.append([])
         for j in matrix[i]:
