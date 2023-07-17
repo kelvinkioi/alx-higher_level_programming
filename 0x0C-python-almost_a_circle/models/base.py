@@ -9,7 +9,7 @@ class Base:
     def __init__(self, id=None):
         """__init__ initialization
         Args:
-            id: id is an integer 
+            id: id is an integer
         """
         if id is not None:
             self.id = id
