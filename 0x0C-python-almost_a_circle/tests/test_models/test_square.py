@@ -43,7 +43,9 @@ class tests_1(unittest.TestCase):
             Square(0)
         self.s5 = Square(2)
         self.assertEqual(self.s5.__str__(), '[Square] (21) 0/0 - 2')
-        self.assertEqual(self.s5.to_dictionary(), {'id': 21, 'size': 2, 'x': 0, 'y': 0})
+        self.assertEqual(
+                self.s5.to_dictionary(),
+                {'id': 21, 'size': 2, 'x': 0, 'y': 0})
 
 
 class tests_2(unittest.TestCase):
