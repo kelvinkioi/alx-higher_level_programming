@@ -10,7 +10,7 @@ class tests_1(unittest.TestCase):
     def test_0(self):
         self.s1 = Square(24, 16)
         self.s1.update()
-        self.assertEqual(self.s1.id, 1)
+        self.assertEqual(self.s1.id, 17)
         self.s1.update(89)
         self.assertEqual(self.s1.id, 89)
         self.s1.update(89, 2)
@@ -19,12 +19,12 @@ class tests_1(unittest.TestCase):
 
     def test_1(self):
         self.s2 = Square(8)
-        self.assertEqual(self.s2.id, 2)
+        self.assertEqual(self.s2.id, 18)
         self.assertEqual(self.s2.size, 8)
         self.s3 = Square(1, 2)
-        self.assertEqual(self.s3.id, 3)
+        self.assertEqual(self.s3.id, 19)
         self.s4 = Square(1, 2, 3)
-        self.assertEqual(self.s4.id, 4)
+        self.assertEqual(self.s4.id, 20)
         self.s4 = Square(1, 2, 3, 4)
         self.assertEqual(self.s4.id, 4)
         with self.assertRaises(TypeError):
@@ -42,8 +42,8 @@ class tests_1(unittest.TestCase):
         with self.assertRaises(ValueError):
             Square(0)
         self.s5 = Square(2)
-        self.assertEqual(self.s5.__str__(), '[Square] (5) 0/0 - 2')
-        self.assertEqual(self.s5.to_dictionary(), {'id': 5, 'size': 2, 'x': 0, 'y': 0})
+        self.assertEqual(self.s5.__str__(), '[Square] (21) 0/0 - 2')
+        self.assertEqual(self.s5.to_dictionary(), {'id': 21, 'size': 2, 'x': 0, 'y': 0})
 
 
 class tests_2(unittest.TestCase):
