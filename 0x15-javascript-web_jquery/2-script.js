@@ -1,3 +1,3 @@
 $('#red_header').click(() => {
-  $('header').addClass('red');
+  $('header').css('color', '#FF0000');
 });
